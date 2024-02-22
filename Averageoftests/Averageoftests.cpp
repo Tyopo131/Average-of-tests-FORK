@@ -1,5 +1,10 @@
 #include <iostream>
 #include "standaloneExitChoice.h"
+#ifdef _DEBUG
+#pragma comment(lib, "standaloneExitChoice.Debug.lib")
+#else
+#pragma comment(lib, "standaloneExitChoice.Release.lib")
+#endif
 using namespace std;
 
 int main() {
